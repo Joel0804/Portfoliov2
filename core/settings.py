@@ -128,7 +128,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # React Vite default port
+    "http://localhost:5173", 
+    "https://joel-portfolio2.onrender.com",# React Vite default port
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
