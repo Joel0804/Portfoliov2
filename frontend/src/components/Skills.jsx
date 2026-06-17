@@ -3,7 +3,7 @@ import axios from 'axios'
 function Skills(){
         const [skills, setskills] = useState([]) 
         useEffect(()=>{
-          axios.get("http://127.0.0.1:8000/api/skills/")         
+          axios.get("https://portfoliov2-ayan.onrender.com/api/skills/")         
           .then(res => setskills(res.data))   
         },[])
         return (

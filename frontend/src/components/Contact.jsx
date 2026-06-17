@@ -8,7 +8,7 @@ function Contacts(){
     const [success, setSuccess] = useState(false)
     const handleSubmit = (e) => {
     e.preventDefault()  // stops page refresh
-    axios.post("http://127.0.0.1:8000/api/contacts/", {
+    axios.post("https://portfoliov2-ayan.onrender.com/api/contacts/", {
     name, email, message
     }).then(() => {
     setSuccess(true)

@@ -4,7 +4,7 @@ import axios from 'axios'
 function Projects(){
     const [projects, setprojects] = useState([]) 
     useEffect(()=> {
-        axios.get("http://127.0.0.1:8000/api/projects/")
+        axios.get("https://portfoliov2-ayan.onrender.com/api/projects/")
         .then(res => setprojects(res.data))
     },[])
     return (
